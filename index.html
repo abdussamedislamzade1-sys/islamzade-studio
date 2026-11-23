@@ -25,6 +25,8 @@
   <div class="st" id="st">Hazırlanır… / Hazırlanıyor…</div>
   <button class="btn" id="again" style="display:none">⬇ Yenidən yüklə / Tekrar indir</button>
   <div class="small">
+    <b>Chrome "faylı saxlayım?" soruşarsa</b> (və ya faylın adı "Unconfirmed…" olarsa): <b>Ctrl+J</b> basın → faylın yanında <b>"Sakla / Keep"</b> (lazım olsa ⋮ → "Yenə də saxla").<br>
+    <b>Chrome "dosyayı saklayayım mı?" sorarsa</b> (veya dosyanın adı "Unconfirmed…" olursa): <b>Ctrl+J</b> basın → dosyanın yanında <b>"Sakla / Keep"</b> (gerekirse ⋮ → "Yine de sakla").<br><br>
     Yükləmə bitəndə <b>IslamzadeStudio-Setup.exe</b> faylını açın. Windows "kompüterinizi qorudu" desə: <b>Ətraflı məlumat → Hər halda işə sal</b>.<br>
     İndirme bitince <b>IslamzadeStudio-Setup.exe</b> dosyasını açın. Windows "bilgisayarınızı korudu" derse: <b>Ek bilgi → Yine de çalıştır</b>.<br><br>
     Əlaqə / İletişim: WhatsApp +994 51 358 10 66
@@ -39,6 +41,7 @@ function save() {
   document.body.appendChild(a); a.click(); a.remove();
 }
 async function run() {
+  busy = true;
   try {
     const info = await (await fetch(BASE + 'latest.json?t=' + Date.now(), { cache: 'no-store' })).json();
     st.textContent = 'Versiya / Sürüm ' + info.version + ' — yüklənir / indiriliyor… 0%';
@@ -67,7 +70,8 @@ async function run() {
     st.innerHTML = '<span class="err">Xəta / Hata: ' + e.message + ' — səhifəni yeniləyin / sayfayı yenileyin.</span>';
   }
 }
-again.onclick = () => blobUrl ? save() : run();
+let busy = false;
+again.onclick = () => blobUrl ? save() : (!busy && run());
 run();
 </script>
 </body>
