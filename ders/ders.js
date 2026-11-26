@@ -13,7 +13,7 @@
       mutedBy: 'Müəllim mikrofonunuzu bağladı', camBy: 'Müəllim kameranızı bağladı', locked: 'Müəllim icazə verməyib. 🙋 Əl qaldırın.',
       handUp: 'Əliniz qaldırıldı — müəllim görür', handDown: 'Müəllim əlinizi endirdi',
       noDevice: 'Kamera/mikrofon tapılmadı və ya icazə verilmədi. Dərsi yenə də izləyə bilərsiniz.',
-      endTitle: 'Dərs bitdi', endBody: 'Allah razı olsun! Müəllim dərsi bitirdi.',
+      endTitle: 'Dərs bitdi', endBody: 'Təşəkkür edirik! Müəllim dərsi bitirdi.',
       kickTitle: 'Dərsdən çıxarıldınız', kickBody: 'Müəllim sizi dərsdən çıxardı.',
       leftTitle: 'Dərsdən çıxdınız', leftBody: 'Yenidən qoşulmaq üçün düyməni basın.', rejoin: 'Yenidən qoşul',
       errTitle: 'Qoşulmaq alınmadı', errBody: 'İnterneti yoxlayıb səhifəni yeniləyin.', reload: 'Səhifəni yenilə', you: 'Siz'
@@ -21,15 +21,15 @@
     tr: {
       title: 'Online ders', joinHint: 'Adınızı yazın ve derse katılın. Katıldığınızda mikrofonunuz ve kameranız kapalı olacak.',
       namePh: 'Adınız ve soyadınız', join: 'Derse katıl', privacy: 'Tarayıcı kamera ve mikrofon için izin isteyecek — "İzin ver"e basın. Bunlar yalnızca sizin isteğinizle açılır.',
-      needName: 'Adınızı yazın.', badLink: 'Link eksik. Hocadan linki tekrar isteyin.',
-      connecting: 'Bağlanıyor…', waitTitle: 'Bekleyin', waitBody: 'Hoca sizi derse kabul edecek.',
-      teacherWait: 'Hocanın görüntüsü bekleniyor…', hand: 'El kaldır', mic: 'Mikrofon', cam: 'Kamera', leave: 'Çık',
-      yesOpen: 'Aç', no: 'Hayır', askMic: 'Hoca mikrofonunuzu açmanızı istiyor', askCam: 'Hoca kameranızı açmanızı istiyor',
-      mutedBy: 'Hoca mikrofonunuzu kapattı', camBy: 'Hoca kameranızı kapattı', locked: 'Hoca izin vermedi. 🙋 El kaldırın.',
-      handUp: 'Eliniz kalktı — hoca görüyor', handDown: 'Hoca elinizi indirdi',
+      needName: 'Adınızı yazın.', badLink: 'Link eksik. Eğitmenden linki tekrar isteyin.',
+      connecting: 'Bağlanıyor…', waitTitle: 'Bekleyin', waitBody: 'Eğitmen sizi derse kabul edecek.',
+      teacherWait: 'Eğitmenin görüntüsü bekleniyor…', hand: 'El kaldır', mic: 'Mikrofon', cam: 'Kamera', leave: 'Çık',
+      yesOpen: 'Aç', no: 'Hayır', askMic: 'Eğitmen mikrofonunuzu açmanızı istiyor', askCam: 'Eğitmen kameranızı açmanızı istiyor',
+      mutedBy: 'Eğitmen mikrofonunuzu kapattı', camBy: 'Eğitmen kameranızı kapattı', locked: 'Eğitmen izin vermedi. 🙋 El kaldırın.',
+      handUp: 'Eliniz kalktı — eğitmen görüyor', handDown: 'Eğitmen elinizi indirdi',
       noDevice: 'Kamera/mikrofon bulunamadı veya izin verilmedi. Dersi yine de izleyebilirsiniz.',
-      endTitle: 'Ders bitti', endBody: 'Allah razı olsun! Hoca dersi bitirdi.',
-      kickTitle: 'Dersten çıkarıldınız', kickBody: 'Hoca sizi dersten çıkardı.',
+      endTitle: 'Ders bitti', endBody: 'Teşekkür ederiz! Eğitmen dersi bitirdi.',
+      kickTitle: 'Dersten çıkarıldınız', kickBody: 'Eğitmen sizi dersten çıkardı.',
       leftTitle: 'Dersten çıktınız', leftBody: 'Tekrar katılmak için düğmeye basın.', rejoin: 'Tekrar katıl',
       errTitle: 'Bağlanılamadı', errBody: 'İnterneti kontrol edip sayfayı yenileyin.', reload: 'Sayfayı yenile', you: 'Siz'
     }
